@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Shadow Over Innsmouth</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="http://d1ujqdpfgkvqfi.cloudfront.net/favicon-generator/htdocs/favicons/2015-01-26/76152d7d70bdb7e0082e520cad58e514.ico">
+    <script src="script.js"></script>
+		<style>
+			h1 {align: center;}
+			h2 {align: center;}
+			h3 {align: center;}
+			button {align: center;}
+		</style>
+  </head>
+  
+	   
+  <body style="background-color: lightblue">
+	
+		<div> 
+    <h1>Can you answer this book-related question?</h1>
+    <p id="event"></p>
+    
+		  
+    <form id="form">
+	    <p style="color: light-red">Answer goes here!</p>
+	    <input type="text" name="answer">
+	    </input>
+    </form>
+	
+	  
+    <button onclick="verify()">Check!</button>
+    <br>
+    <br>
+    <p ></p>
+    <br>
+    <h2 ></h2>
+    <h3 style="color: blue" id="result"></h3>
+    <h4> Version 2.1 </h3>
+	  
+	  </div>
+	
+	
+    <script>
+      function pickRandom() {
+      return Math.floor((Math.random() * (facts.length - 1)));
+      }
+      var which = 0;
+      document.getElementById("event").innerHTML = facts[which].event;
+      function set(){
+	      document.getElementById("event").innerHTML = facts[which].event;}
+      function verify(){
+	      var x = document.getElementById("form");
+	      if(x.elements[0].value == facts[which].year){ 
+		      document.getElementById("result").innerHTML = "Correct!";
+		      which = which + 1;}
+	      else{ document.getElementById("result").innerHTML = "False!";
+		   which = 0;
+		   }
+	      if(which == facts.length) document.getElementById("result").innerHTML = 
+		      "Congratulations! You have won the game! Don't reset your browser";
+	      else{set();
+	      x.elements[0].value = "";}
+	      
+      }
+      
+      
+      
+   
+      
+      
+    </script>
+  </body>
+</html>
