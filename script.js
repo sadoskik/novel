@@ -6,5 +6,6 @@ var facts = [
   {year:"Devil's Reef", event:"What's the name of the ocean-based mass that causes the strife?"},
   {year:"Antiquarian", event:"Lovecraft felt he was this and many of his characters held this hobby"},
   {year:"Cosmocism", event:"Lovecraft started this movement"},
-  {year:"Xenophobia", event:"This theme is shown by the main character's innate hatred of the townspeople's characteristics"}
+  {year:"Xenophobia", event:"This theme is shown by the main character's innate hatred of the townspeople's characteristics"},
+  {year:"Non-Euclidean", event:"This form of geometry is mentioned by Lovecraft. A kind of mystical and illogical space"}
 ];
